@@ -1,1 +1,120 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: cyan;
+  margin-top: -10px;
+}
+
+nav {
+  position:fixed;
+  top:0;
+  left:0;
+  background-color: #fcf;
+  width: 100vw;
+  height:60px;
+  display: flex;
+  justify-content:space-between;
+  text-align: center;
+  align-items: center;
+}
+
+nav ul{
+  text-align: center;
+  justify-content:center;
+  flex-grow:1;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right:20px;
+}
+
+nav ul li a {
+  font-size: 22px;
+  font-weight:525;
+  letter-spacing: 0.7px;
+  text-decoration: none;
+  list-style-type: none;
+  color: darkblue;
+}
+
+#profile-link {
+  font-size: 30px;
+  padding-left: 20px;
+  margin-right: -160px;
+  color: #333;
+  text-shadow: 0.5px 0.5px 1px darkblue;
+}
+
+
+#about-me, #skills-and-experience, #projects {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px;
+  width: 800px;
+  height: 144px;
+  margin: 40px auto;  
+}
+
+#about-me {
+  background-color: #abc;
+}
+
+#skills-and-experience {
+  background-color: #bac;
+}
+
+#projects {
+  background-color: #ace;
+}
+
+
+h1 {
+  text-align:center;
+  margin-top: 80px;
+  margin-bottom: -40px;
+}
+
+.footer {
+  background-color: #fcf;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-links a {
+  margin: 0 8px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  #about-me, #skills-and-experience, #projects {
+    width: 100%;
+    margin: 80px 10px 40px;
+  }
+}
